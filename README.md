@@ -48,11 +48,11 @@ Sin embargo, cuando se grafican, cada conjunto de datos tiene una
        alt="Cuarteto de Anscombe"
        width="80%"/>
   <div style="font-size:0.8rem; color:#555;">
-    Figura 1. Representación gráfica de los cuatro conjuntos del Cuarteto de Anscombe.  
+    <b>Figura 1.</b> Representación gráfica de los cuatro conjuntos del Cuarteto de Anscombe.  
     Cada gráfico es distinto, aunque las estadísticas básicas son casi idénticas.
   </div>
 </div>
-
+<br>
 <p style="text-align:justify;">
 Esto demuestra por qué la visualización es esencial en ciencia de datos, ingeniería, economía, salud, machine learning y prácticamente cualquier área donde se tomen decisiones sobre información.
 </p>
@@ -87,7 +87,7 @@ Importancia-Data-Visualization/
 │           - Comparar visualmente patrones
 │
 └── RStudio/   (o el nombre de la herramienta que usaste para la regresión lineal)
-         ↳ Código usado para ajuste de regresión lineal
+         - Código usado para ajuste de regresión lineal
            sobre el subconjunto elegido (por ejemplo "Bullseye"),
            junto con capturas de resultados/gráficos.
 </pre>
@@ -140,10 +140,10 @@ En esta carpeta se almacenan los scripts en <strong>R</strong> utilizados para:
        alt="Código R"
        width="60%"/>
   <div style="font-size:0.8rem; color:#555;">
-    Figura 2. Ejemplo de script en R usado para cargar y graficar múltiples subconjuntos del Datasaurus.
+    <b>Figura 2.</b> Ejemplo de script en R usado para cargar y graficar múltiples subconjuntos del Datasaurus.
   </div>
 </div>
-
+<br>
 <p style="text-align:justify;">
 El lenguaje R se utiliza porque es una herramienta estándar en análisis estadístico y visualización,
 y permite automatizar la generación de gráficos para todos los subconjuntos de datos de manera rápida y reproducible.
@@ -174,18 +174,21 @@ Esto nos permite mostrar un punto muy importante:
        alt="Bullseye dataset"
        width="45%"/>
   <div style="font-size:0.8rem; color:#555;">
-    Figura 3. Subconjunto "Bullseye" del Datasaurus.  
+    <b>Figura 3.</b> Subconjunto "Bullseye" del Datasaurus.  
     Visualmente es una diana casi perfecta, pero sus métricas resumen parecen normales.
   </div>
 </div>
-
+<br>
 <div style="text-align:center; margin-top:1rem; margin-bottom:1rem;">
   ![graficaMD](https://github.com/user-attachments/assets/09069b2a-f71e-41d5-8fb5-910a04a7716a)
   <div style="font-size:0.8rem; color:#555;">
-    Figura 4. Línea Graficada en Clase.  
+    <b>Figura 4.</b> Línea Graficada en Clase.  
   </div>
 </div>
 
+<p style="text-align:justify;">
+  Se puede apreciar que la linea no está bien planteada debido a no tener una interpretación visual correcta de los datos. 
+</p>
 <p style="text-align:justify;">
 Esta parte del trabajo responde a la pregunta:
 <strong>¿Qué tan válida es la regresión lineal si la forma real de los datos no es lineal?</strong><br/>
