@@ -16,10 +16,15 @@ Este ejemplo evidencia que los análisis numéricos por sí solos pueden llevar 
 ## DATA
 En el directorio denominado data encontraremos los conjuntos de datos que utilizamos para poder visualizar el *CUARTETO DE ANSCOMBE* y los *13* conjuntos de datos del *Datasaurus*
 
-## DATASAURUS
+## R
 En este directorio encontraremos el código que utilizamos para mostrar los 13 conjuntos de datos disponibles dentro del dataset
 
 <img width="613" height="351" alt="image" src="https://github.com/user-attachments/assets/70500f1b-cbef-4e3b-867a-e1afef119ec5" />
+
+## RStudio
+En este directorio encontrarmeos el código con el que aplicamos la línea de tendencia dentro del conjunto de datos asignado en clase *BULLSEYE*
+
+<img width="400" height="350" alt="bullseye" src="https://github.com/user-attachments/assets/c61e6a32-2056-45ee-922d-dae8d4acf581" />
 
 **Referencia:**  
 Cuarteto de Anscombe. (s/f). Academia-lab.com. Recuperado el 28 de octubre de 2025, de (https://academia-lab.com/enciclopedia/cuarteto-de-anscombe/)
