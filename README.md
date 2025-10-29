@@ -180,7 +180,9 @@ Esto nos permite mostrar un punto muy importante:
 </div>
 <br>
 <div style="text-align:center; margin-top:1rem; margin-bottom:1rem;">
-  ![graficaMD](https://github.com/user-attachments/assets/09069b2a-f71e-41d5-8fb5-910a04a7716a)
+  <img src="https://github.com/user-attachments/assets/09069b2a-f71e-41d5-8fb5-910a04a7716a"
+       alt="Bullseye dataset"
+       width="45%"/>
   <div style="font-size:0.8rem; color:#555;">
     <b>Figura 4.</b> Línea Graficada en Clase.  
   </div>
