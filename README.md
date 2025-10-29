@@ -1,6 +1,8 @@
 # Importancia-Data-Visualization
 
-## UNIVERSIDAD POLITECNICA SALESIANA <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/62fd48e5-2707-422a-9781-ca5c22466656" />
+<h2>UNIVERSIDAD POLITÉCNICA SALESIANA 
+<img src="https://github.com/user-attachments/assets/62fd48e5-2707-422a-9781-ca5c22466656" alt="Logo UPS" width="60" style="vertical-align:middle; margin-left:10px;"/>
+</h2>
 
 *Carrera:* Ingeniería en Ciencias de la Computación  
 *Periodo:* 67  
