@@ -44,10 +44,6 @@ Sin embargo, cuando se grafican, cada conjunto de datos tiene una
 </p>
 
 <p style="text-align:justify; font-style:italic;">
-Mensaje clave:<br/>
-<strong>Dos conjuntos de datos pueden tener los mismos promedios y la misma correlación,
-pero estar contando historias totalmente diferentes. Solo lo ves cuando lo graficas.</strong>
-</p>
 
 <div style="text-align:center; margin-top:1rem; margin-bottom:1rem;">
   <img src="https://github.com/user-attachments/assets/cdfd6142-a459-4ace-883e-3b0c864c30ee"
