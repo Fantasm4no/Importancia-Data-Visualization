@@ -1,0 +1,155 @@
+---
+title: "Análisis del Datasaurus: Subconjunto *Bullseye*"
+author: "Erick Zhigüe Granda"
+date: "19 de octubre de 2025"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    theme: flatly
+    highlight: kate
+    df_print: paged
+    code_folding: show
+    fig_caption: true
+---
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  fig.align = "center"
+)
+```
+
+<!-- Estilo general para centrar figuras y títulos -->
+<style>
+body {
+  text-align: center;
+}
+p {
+  text-align: center;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  color: #2C3E50;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+.figcaption {
+  color: #7F8C8D;
+  font-style: italic;
+}
+</style>
+
+# INTRODUCCIÓN
+
+Este informe explora el conjunto *Datasaurus* a través del subconjunto *bullseye* para mostrar que
+las estadísticas resumidas (media, desviación, correlación) pueden ser parecidas entre conjuntos, pero *la forma* de los datos *visible al graficar* cuenta una historia distinta.
+
+*Qué encontrarás:*
+
+1) Una previsualización del subconjunto,  
+2) Un resumen estadístico interpretado, y  
+3) Dos visualizaciones (sin y con línea de tendencia) para comparar.
+
+> *Idea clave:* Los números orientan; la visualización revela.
+
+# OBJETIVOS
+
+- Verificar el subconjunto *bullseye* y su estructura.  
+- Contrastar *resúmenes numéricos* con *patrones visuales*.  
+- Ilustrar límites del ajuste lineal ante formas no lineales.
+
+# CARGAR LIBRERÍAS
+
+Cargamos `datasauRus`, `dplyr` y `ggplot2` para acceder al dataset, manipularlo y graficarlo. Se ocultan mensajes y “warnings” para mantener un reporte limpio.
+
+```{r librerias, message=FALSE, warning=FALSE}
+library(datasauRus)
+library(dplyr)
+library(ggplot2)
+```
+
+# MOSTRAR bullseye
+
+Trabajaremos únicamente con el subconjunto **`bullseye`** del `datasaurus_dozen`. Abajo se muestra una **previsualización** de las primeras filas para verificar estructura y tipos de columnas.
+
+```{r filtro, echo=FALSE}
+bullseye_data <- datasaurus_dozen %>%
+  filter(dataset == "bullseye")
+
+head(bullseye_data)
+```
+
+# RESUMEN DEL DATASET
+
+Obtenemos un **resumen estadístico** (medias, desviaciones estándar y correlación). El propósito es contrastar estos valores globales con lo que veremos en los gráficos.
+
+```{r resumen, echo=FALSE}
+resumen <- bullseye_data %>%
+  summarize(
+    mean_x = mean(x),
+    mean_y = mean(y),
+    std_dev_x = sd(x),
+    std_dev_y = sd(y),
+    corr_x_y = cor(x, y)
+  )
+
+resumen
+```
+
+# GRAFICAR EL DATASET
+
+Primero observamos el **patrón de puntos** sin ningún ajuste. Esto revela la **forma real** del subconjunto _bullseye_ (círculos concéntricos), algo que un resumen numérico no muestra.
+
+```{r grafico, echo=FALSE, message=FALSE, warning=FALSE, fig.width=5, fig.height=4}
+ggplot(bullseye_data, aes(x = x, y = y)) +
+  geom_point(color = "#AE18ED", alpha = 0.8, size = 1.2)+
+  labs(
+    title = "Datasaurus - Bullseye",
+    x = "Eje X",
+    y = "Eje Y"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+```
+
+# GRAFICAR LÍNEA DE TENDENCIA
+
+Ahora añadimos una **línea de tendencia lineal (LM)**. Sirve para evaluar relaciones lineales, pero **no captura** bien patrones **no lineales** (como círculos).
+
+```{r grafico_tendencia, echo=FALSE, message=FALSE, warning=FALSE, fig.width=5, fig.height=4}
+ggplot(bullseye_data, aes(x = x, y = y)) +
+  geom_point(color = "#AE18ED", alpha = 0.8, size = 1.2) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 0.8) +
+  labs(
+    title = "Datasaurus - Bullseye",
+    x = "Eje X",
+    y = "Eje Y"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+```
+
+# GRAFICA HECHA EN CLASE
+
+Incluimos la imagen generada en clase como **punto de comparación** al graficar la linea de tendencia.
+
+```{r grafica_clase, echo=FALSE, out.width="60%", fig.width=5, fig.height=4}
+knitr::include_graphics("graficaMD.jpeg")
+```
+
+# CONCLUSIONES
+
+- Las **estadísticas resumidas** aportan una visión general, pero **no bastan para comprender la realidad de los datos**. La **visualización** es esencial para descubrir patrones, estructuras y comportamientos que las métricas numéricas pueden ocultar.  
+
+- Una **correlación cercana a cero** no siempre implica ausencia de relación: como demuestra el caso *Bullseye*, pueden existir **formas claramente definidas** (círculos, dinosaurios, líneas, etc.) con valores estadísticos similares.  
+
+- Un análisis verdaderamente riguroso combina **resúmenes numéricos, exploración visual y modelos apropiados** a la naturaleza del fenómeno. Solo así es posible **interpretar con precisión y profundidad** lo que los datos realmente comunican.  
