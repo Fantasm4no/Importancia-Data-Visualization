@@ -6,17 +6,15 @@
     Importancia de la Visualización de Datos
   </h1>
 
-  <div style="font-size:0.95rem; line-height:1.4;">
-    <strong>Universidad Politécnica Salesiana</strong><br/>
-    <em>Carrera:</em> Ingeniería en Ciencias de la Computación<br/>
-    <em>Periodo:</em> 67<br/>
-    <em>Estudiante:</em> Erick Zhigüe Granda
-  </div>
-
-  <div style="margin-top:1rem;">
+<div style="margin-top:1rem;">
     <img src="https://github.com/user-attachments/assets/a80d578b-0ff5-4241-8683-7ddba19c8806"
          alt="UPS Logo"
          width="220"/>
+</div>
+  <div style="font-size:0.95rem; line-height:1.4;">
+    <em>Carrera:</em> Ingeniería en Ciencias de la Computación<br/>
+    <em>Periodo:</em> 67<br/>
+    <em>Estudiante:</em> Erick Zhigüe Granda
   </div>
 
 </div>
@@ -75,15 +73,15 @@ y archivo.
 Importancia-Data-Visualization/
 │
 ├── README.md
-│        ↳ Documento principal con portada, marco teórico y explicación del trabajo.
+│        - Documento principal con portada, marco teórico y explicación del trabajo.
 │
 ├── data/
-│        ↳ Conjuntos de datos utilizados:
+│        - Conjuntos de datos utilizados:
 │           - Cuarteto de Anscombe
 │           - Datasaurus (13 subconjuntos)
 │
 ├── R/
-│        ↳ Scripts en R usados para:
+│        - Scripts en R usados para:
 │           - Cargar y mostrar los conjuntos de datos
 │           - Graficar cada dataset
 │           - Comparar visualmente patrones
@@ -114,7 +112,7 @@ los análisis y las visualizaciones.
 
 <p style="text-align:justify;">
 El caso de <strong>Datasaurus</strong> va más allá del ejemplo original de Anscombe. 
-Muestra situaciones extremas (por ejemplo, datos que forman la silueta de un dinosaurio 🦖, 
+Muestra situaciones extremas (por ejemplo, datos que forman la silueta de un dinosaurio, 
 un círculo perfecto, una diana tipo “bullseye”, una línea curva, etc.) pero que
 numéricamente parecen “normales”.
 Esto refuerza la idea de que siempre debemos <strong>ver</strong> los datos, no solo calcularlos.
