@@ -1,12 +1,10 @@
 # Importancia-Data-Visualization
 
-## UNIVERSIDAD POLITECNICA SALESIANA
+## UNIVERSIDAD POLITECNICA SALESIANA <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/62fd48e5-2707-422a-9781-ca5c22466656" />
 
-## INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN
-
-## PERIODO 67
-
-## EST: ERICK ZHIGÜE GRANDA
+*Carrera:* Ingeniería en Ciencias de la Computación  
+*Periodo:* 67  
+*Estudiante:* Erick Zhigüe Granda  
 
 ## CUARTETO DE ANSCOMBE
 El **Cuarteto de Anscombe** fue creado por el estadístico **Francis Anscombe (1973)** con el propósito de demostrar la importancia de la visualización de datos en el análisis estadístico. Este conjunto está formado por **cuatro grupos de datos** que poseen estadísticas descriptivas prácticamente idénticas —como la media, la varianza, la correlación y la ecuación de regresión lineal—, pero que al ser graficados muestran **distribuciones completamente diferentes**.  
