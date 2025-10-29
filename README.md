@@ -181,6 +181,13 @@ Esto nos permite mostrar un punto muy importante:
   </div>
 </div>
 
+<div style="text-align:center; margin-top:1rem; margin-bottom:1rem;">
+  ![graficaMD](https://github.com/user-attachments/assets/09069b2a-f71e-41d5-8fb5-910a04a7716a)
+  <div style="font-size:0.8rem; color:#555;">
+    Figura 4. Línea Graficada en Clase.  
+  </div>
+</div>
+
 <p style="text-align:justify;">
 Esta parte del trabajo responde a la pregunta:
 <strong>¿Qué tan válida es la regresión lineal si la forma real de los datos no es lineal?</strong><br/>
