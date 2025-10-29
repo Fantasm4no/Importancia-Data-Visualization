@@ -187,16 +187,10 @@ Esto nos permite mostrar un punto muy importante:
     <b>Figura 4.</b> Línea Graficada en Clase.  
   </div>
 </div>
-
+<br>
 <p style="text-align:justify;">
   Se puede apreciar que la linea no está bien planteada debido a no tener una interpretación visual correcta de los datos. 
 </p>
-<p style="text-align:justify;">
-Esta parte del trabajo responde a la pregunta:
-<strong>¿Qué tan válida es la regresión lineal si la forma real de los datos no es lineal?</strong><br/>
-Conclusión: <em>depende de la forma real de los datos, y esa forma solo la ves al graficar.</em>
-</p>
-
 <hr/>
 
 <!-- ===================== CONCLUSIONES ===================== -->
