@@ -231,9 +231,5 @@ Cuarteto de Anscombe. (s/f). <em>Academia-lab.com</em>. Recuperado el 28 de octu
 https://academia-lab.com/enciclopedia/cuarteto-de-anscombe/
 </p>
 
-<p style="font-size:0.9rem; text-align:justify;">
-Anscombe, F. J. (1973). Graphs in Statistical Analysis. <em>American Statistician</em>, 27(1), 17–21.
-</p>
-
 <br/>
 <br/>
